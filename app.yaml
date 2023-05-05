@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: angels-blog-main/index.html
+  upload: angels-blog-main/index.html
+
+- url: /(.*)
+  static_files: angels-blog-main/\1
+  upload: angels-blog-main/(.*)
